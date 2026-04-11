@@ -359,12 +359,20 @@
 
   <script>
     function trackClick(label) {
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'click', {
-          event_category: 'CTA',
-          event_label: label
-        });
-      }
+      if (typeof gtag === 'undefined') return;
+
+      // Evento GA4 — aparece em Eventos > whatsapp_click no Analytics
+      gtag('event', 'whatsapp_click', {
+        event_category: 'CTA',
+        event_label: label
+      });
+
+      // Conversão Google Ads — marque este evento como conversão no painel do Ads
+      gtag('event', 'conversion', {
+        send_to: 'AW-18082110560',
+        event_category: 'CTA',
+        event_label: label
+      });
     }
   </script>
 
