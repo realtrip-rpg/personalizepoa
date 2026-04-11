@@ -3,40 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personalize POA — Brindes & Presentes Personalizados</title>
-  <meta name="description" content="Personalize brindes, presentes e produtos com a sua identidade. Atendimento pelo WhatsApp." />
+  <title>Personalize POA — Camisas Personalizadas</title>
+  <meta name="description" content="Camisas de time, uniformes e camisas personalizadas. Atendimento pelo WhatsApp." />
 
-  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager — gerencia GA4, Google Ads e Meta Pixel -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-WD7HFWCQ');</script>
-
-  <!-- Google Analytics 4 + Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCM334DYYL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-XCM334DYYL');
-    gtag('config', 'AW-18082110560');
-  </script>
-
-  <!-- Meta Pixel — descomente e insira seu Pixel ID quando tiver -->
-  <!--
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_ID');
-    fbq('track', 'PageView');
-  </script>
-  -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +19,6 @@
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --red:    #D32F2F;
       --green:  #2E7D32;
@@ -55,9 +29,7 @@
       --text:   #1A1A1A;
       --muted:  #6B6B6B;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'DM Sans', sans-serif;
       background: var(--white);
@@ -65,8 +37,6 @@
       min-height: 100vh;
       overflow-x: hidden;
     }
-
-    /* ── HEADER ── */
     header {
       display: flex;
       justify-content: center;
@@ -74,13 +44,7 @@
       padding: 1.5rem 2rem;
       border-bottom: 1px solid #eee;
     }
-
-    header img {
-      height: 56px;
-      width: auto;
-    }
-
-    /* ── HERO ── */
+    header img { height: 56px; width: auto; }
     .hero {
       display: flex;
       flex-direction: column;
@@ -91,7 +55,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
       position: absolute;
@@ -105,9 +68,7 @@
       z-index: 0;
       pointer-events: none;
     }
-
     .hero > * { position: relative; z-index: 1; }
-
     .hero-tag {
       display: inline-block;
       font-size: 0.75rem;
@@ -119,7 +80,6 @@
       border-radius: 100px;
       padding: 0.3rem 0.9rem;
     }
-
     .hero h1 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(3rem, 10vw, 6rem);
@@ -127,11 +87,9 @@
       letter-spacing: 0.02em;
       color: var(--black);
     }
-
     .hero h1 span.red    { color: var(--red); }
     .hero h1 span.green  { color: var(--green); }
     .hero h1 span.yellow { color: var(--yellow); }
-
     .hero p {
       font-size: clamp(1rem, 2.5vw, 1.2rem);
       color: var(--muted);
@@ -139,8 +97,6 @@
       line-height: 1.65;
       font-weight: 300;
     }
-
-    /* ── CTA BUTTON ── */
     .btn-whatsapp {
       display: inline-flex;
       align-items: center;
@@ -158,32 +114,13 @@
       transition: transform 0.18s ease, box-shadow 0.18s ease;
       box-shadow: 0 4px 24px rgba(37,211,102,0.35);
     }
-
     .btn-whatsapp:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 32px rgba(37,211,102,0.45);
     }
-
-    .btn-whatsapp svg {
-      width: 22px;
-      height: 22px;
-      fill: white;
-      flex-shrink: 0;
-    }
-
-    .btn-secondary {
-      font-size: 0.88rem;
-      color: var(--muted);
-      margin-top: -0.5rem;
-    }
-
-    .btn-secondary a {
-      color: var(--green);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    /* ── FEATURES ── */
+    .btn-whatsapp svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+    .btn-secondary { font-size: 0.88rem; color: var(--muted); margin-top: -0.5rem; }
+    .btn-secondary a { color: var(--green); text-decoration: none; font-weight: 500; }
     .features {
       background: var(--gray);
       padding: 4rem 1.5rem;
@@ -192,7 +129,6 @@
       align-items: center;
       gap: 2.5rem;
     }
-
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -200,7 +136,6 @@
       width: 100%;
       max-width: 860px;
     }
-
     .feature-card {
       background: var(--white);
       border-radius: 16px;
@@ -210,7 +145,6 @@
       gap: 0.75rem;
       border: 1px solid #E8E8E8;
     }
-
     .feature-icon {
       width: 40px;
       height: 40px;
@@ -220,31 +154,10 @@
       justify-content: center;
       font-size: 20px;
     }
-
-    .feature-card h3 {
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--black);
-    }
-
-    .feature-card p {
-      font-size: 0.875rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    /* ── COLOR BAR ── */
-    .color-bar {
-      display: flex;
-      height: 6px;
-      width: 100%;
-    }
-
-    .color-bar span {
-      flex: 1;
-    }
-
-    /* ── FOOTER ── */
+    .feature-card h3 { font-size: 1rem; font-weight: 500; color: var(--black); }
+    .feature-card p  { font-size: 0.875rem; color: var(--muted); line-height: 1.6; }
+    .color-bar { display: flex; height: 6px; width: 100%; }
+    .color-bar span { flex: 1; }
     footer {
       padding: 2rem 1.5rem;
       text-align: center;
@@ -252,22 +165,15 @@
       color: var(--muted);
       border-top: 1px solid #eee;
     }
-
-    footer a {
-      color: var(--green);
-      text-decoration: none;
-    }
-
-    /* ── ANIMATIONS ── */
+    footer a { color: var(--green); text-decoration: none; }
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
-    .hero-tag  { animation: fadeUp 0.5s ease both; }
-    .hero h1   { animation: fadeUp 0.5s 0.1s ease both; }
-    .hero p    { animation: fadeUp 0.5s 0.2s ease both; }
-    .btn-whatsapp { animation: fadeUp 0.5s 0.3s ease both; }
+    .hero-tag      { animation: fadeUp 0.5s ease both; }
+    .hero h1       { animation: fadeUp 0.5s 0.1s ease both; }
+    .hero p        { animation: fadeUp 0.5s 0.2s ease both; }
+    .btn-whatsapp  { animation: fadeUp 0.5s 0.3s ease both; }
     .btn-secondary { animation: fadeUp 0.5s 0.35s ease both; }
   </style>
 </head>
@@ -277,34 +183,27 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD7HFWCQ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- COLOR BAR TOP -->
   <div class="color-bar">
     <span style="background:#D32F2F;"></span>
     <span style="background:#2E7D32;"></span>
     <span style="background:#F9A825;"></span>
   </div>
 
-  <!-- HEADER -->
   <header>
-    <!-- Logo inline em SVG gerado da imagem enviada -->
     <img src="logo.png" alt="Personalize POA" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'" />
     <span id="logo-text" style="display:none; font-family:'Bebas Neue',sans-serif; font-size:1.8rem; letter-spacing:0.05em; color:#111;">PERSONALIZE</span>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <span class="hero-tag">Porto Alegre · RS</span>
-
     <h1>
       <span class="red">Per</span><span class="green">so</span><span class="yellow">na</span>lize<br/>
       do seu<br/>jeito
     </h1>
-
     <p>
       Camisas de time, uniformes e camisas personalizadas
       do seu jeito. Atendimento pelo WhatsApp.
     </p>
-
     <a
       class="btn-whatsapp"
       href="https://wa.me/5551991693910?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20quero%20fazer%20um%20pedido%20%F0%9F%8E%81"
@@ -317,14 +216,12 @@
       </svg>
       Fazer pedido agora
     </a>
-
     <p class="btn-secondary">
       Ou veja nossos trabalhos no
       <a href="https://www.instagram.com/personalize.poa/" target="_blank" rel="noopener" onclick="trackClick('instagram_hero')">Instagram</a>
     </p>
   </section>
 
-  <!-- FEATURES -->
   <section class="features">
     <div class="features-grid">
       <div class="feature-card">
@@ -345,12 +242,10 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Personalize POA · <a href="https://www.instagram.com/personalize.poa/" target="_blank">@personalize.poa</a></p>
   </footer>
 
-  <!-- COLOR BAR BOTTOM -->
   <div class="color-bar">
     <span style="background:#F9A825;"></span>
     <span style="background:#2E7D32;"></span>
@@ -358,18 +253,11 @@
   </div>
 
   <script>
+    // Empurra evento para o dataLayer — GTM captura e dispara GA4 + Google Ads
     function trackClick(label) {
-      if (typeof gtag === 'undefined') return;
-
-      // Evento GA4 — aparece em Eventos > whatsapp_click no Analytics
-      gtag('event', 'whatsapp_click', {
-        event_category: 'CTA',
-        event_label: label
-      });
-
-      // Conversão Google Ads — marque este evento como conversão no painel do Ads
-      gtag('event', 'conversion', {
-        send_to: 'AW-18082110560',
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'whatsapp_click',
         event_category: 'CTA',
         event_label: label
       });
